@@ -1,0 +1,23 @@
+/*h1 {
+  margin: 0;
+}*/
+.loader {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  img {
+    animation: 1s flipAnimation;
+    animation-fill-mode: forwards;
+    border-radius: 0;
+    transition: transform 1s ease 0.5s;
+    transform: translate(0, -100%);
+  }
+}
+
+@keyframes flipAnimation {
+  100% {
+    border-radius: 50%;
+    transform: translate(0, 0);
+  }
+}
