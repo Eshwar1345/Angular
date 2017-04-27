@@ -5,10 +5,7 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})/*
-export class AppComponent {
-  title = 'Eshwar work';
-}*/
+})
 export class AppComponent implements OnInit {
   x = true;
   constructor(
@@ -18,6 +15,6 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       this.router.navigate(['loader']);
       this.x = false;
-    }, 500);
+    }, 5000);
   }
 }
