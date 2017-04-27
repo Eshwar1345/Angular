@@ -1,4 +1,4 @@
-.loader {
+.loader-wrapper {
   align-items: center;
   display: flex;
   height: 100%;
@@ -13,6 +13,7 @@
 
 @keyframes flipAnimation {
   100% {
+    border: 10px solid #646464;
     border-radius: 50%;
     transform: translate(0, 0);
   }
