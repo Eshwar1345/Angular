@@ -4,8 +4,7 @@
   height: 100%;
   justify-content: center;
   img {
-    animation: 1s flipAnimation;
-    animation-fill-mode: forwards;
+    animation: flipAnimation 1s ease 0s forwards;
     border-radius: 0;
     transition: transform 1s ease 0.5s;
     transform: translate(0, -100%);
