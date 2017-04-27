@@ -1,20 +1,43 @@
 .loader-wrapper {
   align-items: center;
+  animation: flipLoader 1.5s ease 0s forwards, flipLoaderHeight 1.5s ease 4s forwards;
   display: flex;
-  height: 100%;
+  height: 0;
+  flex-direction: column;
   justify-content: center;
   img {
-    animation: flipAnimation 1s ease 0s forwards;
+    animation: flipAnimation 1s 0.25s forwards;
     border-radius: 0;
-    transition: transform 1s ease 0.5s;
-    transform: translate(0, -100%);
+  }
+  .loader-text {
+    animation: filpText 1.5s ease 0.25s forwards;
   }
 }
 
+@keyframes flipLoader {
+  100% {
+    height: 100%;
+  }
+}
+@keyframes flipLoaderHeight {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
 @keyframes flipAnimation {
   100% {
     border: 10px solid #646464;
     border-radius: 50%;
-    transform: translate(0, 0);
+  }
+}
+@keyframes filpText {
+  100% {
+    color: Green;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
   }
 }
