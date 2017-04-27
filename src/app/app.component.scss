@@ -1,4 +1,4 @@
-.loader {
+.loader-wrapper {
   align-items: center;
   animation: flipLoader 1.5s ease 0s forwards, flipLoaderHeight 1.5s ease 4s forwards;
   display: flex;
@@ -29,6 +29,7 @@
 }
 @keyframes flipAnimation {
   100% {
+    border: 10px solid #646464;
     border-radius: 50%;
   }
 }
