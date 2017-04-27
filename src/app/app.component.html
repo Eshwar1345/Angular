@@ -1,3 +1,8 @@
-<div class="loader-wrapper">
+<router-outlet>
+ <div *ngIf="x" class="loader">
   <img src="assets/img/Eshwar.jpg" alt="Eshwar" />
-</div>
+  <div class="loader-text">
+    Welcome to Eshwargowda account
+  </div>
+ </div>
+</router-outlet>

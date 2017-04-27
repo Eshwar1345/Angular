@@ -1,0 +1,14 @@
+.lunch-page {
+  align-items: center;
+  animation: flipHeight 1.5s ease 0s forwards;
+  background: gray;
+  display: flex;
+  height: 0;
+  justify-content: center;
+}
+
+@keyframes flipHeight {
+  100% {
+    height: 100%;
+  }
+}

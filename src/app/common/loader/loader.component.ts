@@ -2,19 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-loader',
+  templateUrl: './loader.component.html',
+  styleUrls: ['./loader.component.scss']
 })
-export class AppComponent implements OnInit {
-  x = true;
+export class LoaderComponent implements OnInit {
+
+  y = false;
   constructor(
     private router: Router
   ) {}
   ngOnInit() {
     setTimeout(() => {
       this.router.navigate(['loader']);
-      this.x = false;
+      this.y = true;
     }, 5000);
   }
+
 }
