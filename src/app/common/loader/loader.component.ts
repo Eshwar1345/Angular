@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { routerTransitionTop } from '../../router.animations';
 
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
-  styleUrls: ['./loader.component.scss']
+  styleUrls: ['./loader.component.scss'],
+  animations: [routerTransitionTop()],
+  host: {'[@routerTransition]': ''}
 })
 export class LoaderComponent implements OnInit {
 
@@ -16,7 +19,7 @@ export class LoaderComponent implements OnInit {
     setTimeout(() => {
       this.router.navigate(['loader']);
       this.y = true;
-    }, 5000);
+    }, 30000);
   }
 
 }

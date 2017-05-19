@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { routerTopTransitionBottom } from './router.animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [routerTopTransitionBottom()],
+  host: {'[@routerTransition]': ''}
 })
 export class AppComponent implements OnInit {
   x = true;
@@ -13,8 +16,8 @@ export class AppComponent implements OnInit {
   ) {}
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigate(['loader']);
+      this.router.navigate(['app-home']);
       this.x = false;
-    }, 5000);
+    }, 3000);
   }
 }

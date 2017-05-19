@@ -2,19 +2,19 @@
   align-items: center;
   animation: flipLoader 1.5s ease 0s forwards, flipLoaderHeight 1s ease 4s forwards;
   display: flex;
-  height: 0;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   img {
     animation: flipAnimation 1s ease 0.25s forwards;
-    border-radius: 0;
+    border-radius: 50%;
   }
   .loader-text {
-    animation: filpText 1.5s ease 0.25s forwards;
+    animation: filpText 1.5s ease 0.5s forwards;
   }
 }
 
-@keyframes flipLoader {
+/*@keyframes flipLoader {
   100% {
     height: 100%;
   }
@@ -36,7 +36,7 @@
     border: 10px solid #646464;
     border-radius: 50%;
   }
-}
+}*/
 @keyframes filpText {
   100% {
     color: Green;
