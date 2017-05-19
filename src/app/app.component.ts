@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   ) {}
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigate(['loader']);
+      this.router.navigate(['home']);
       this.x = false;
     }, 5000);
   }

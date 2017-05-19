@@ -8,15 +8,15 @@ import { Router } from '@angular/router';
 })
 export class LoaderComponent implements OnInit {
 
-  y = false;
+  z = false;
   constructor(
     private router: Router
   ) {}
   ngOnInit() {
     setTimeout(() => {
       this.router.navigate(['loader']);
-      this.y = true;
-    }, 5000);
+      this.z = true;
+    }, 1500);
   }
 
 }

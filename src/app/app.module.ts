@@ -8,11 +8,17 @@ import { routes } from './app.route';
 
 import { AppComponent } from './app.component';
 import { LoaderComponent } from './common/loader/loader.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavBarComponent } from './common/nav-bar/nav-bar.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoaderComponent
+    LoaderComponent,
+    HomeComponent,
+    NavBarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
